@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: 'Poppins', sans-serif; 
+    line-height: 1.6;
+    background-color: #0d0d14; 
+    color: #e0e0e0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #222;
+    margin: 40px 0;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-section {
+    margin-bottom: 20px;
+    
+    border: 2px solid rgba(255, 255, 0, 0.5); 
+    padding: 10px;
+    border-radius: 50%; 
+    box-shadow: 0 0 25px rgba(255, 255, 0, 0.5); 
+    background-color: #0a0a0a;
+}
+
+.logo-section img {
+    max-width: 150px; 
+    height: auto;
+    display: block;
+    border-radius: 50%;
+}
+
+.hero {
+    background: linear-gradient(135deg, #0f0f1c, #2b2b00, #3f3d00);
+    color: #d4ff00;
+    padding: 100px 0;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(242, 255, 0, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    font-weight: 800;
+    text-shadow: 0 0 20px #ffe100; 
+}
+
+.hero p {
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #fcffb3;
+}
+
+
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    font-size: 2em;
+    color: #f2ff00;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 3px solid #f2ff00; 
+    display: inline-block;
+    padding-bottom: 5px;
+    width: auto; 
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #424242;
+}
+
+.project-summary h2, .solution-details h2, .technology h2 {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 30px auto;
+    padding-bottom: 10px;
+}
+
+
+.summary-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.summary-card {
+    background: linear-gradient(145deg, #121212, #252538); 
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(238, 255, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+    border: 1px solid rgba(246, 255, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.summary-card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 0 30px rgba(246, 255, 0, 0.5);
+}
+
+.summary-card h3 {
+    color: #e2c32b;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    text-shadow: 0 0 8px #e2df2b;
+}
+
+.description-text {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ccc;
+}
+
+.key-feature {
+    background: linear-gradient(90deg, #1a002e, #0d0d14);
+    padding: 25px;
+    border-left: 5px solid #f6ff00;
+    border-radius: 8px;
+    max-width: 700px;
+    margin: 30px auto;
+    box-shadow: 0 0 15px rgba(246, 255, 0, 0.3);
+}
+
+.key-feature h3 {
+    color: #f6ff00;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    text-shadow: 0 0 10px #fbff00;
+}
+
+.technology ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.technology li {
+    
+    background: linear-gradient(145deg, #1a0033, #001925);
+    padding: 15px 25px;
+    border-radius: 50px;
+    border: 1px solid #d6e22b;
+    box-shadow: 0 0 10px rgba(226, 220, 43, 0.3);
+    font-weight: 600;
+    color: #e0e0e0;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.technology li:hover {
+    
+    background: #f6ff00; 
+    color: #0a0a0f;
+    transform: scale(1.15);
+    box-shadow: 0 0 25px rgba(255, 255, 0, 0.8);
+}
+
+footer {
+    background-color: #111;
+    color: #888;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+    margin-top: 50px;
+    border-top: 2px solid #f6ff00; 
+}
+
+@media (max-width: 768px) {
+    .summary-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .summary-card {
+        min-width: 100%;
+    }
+
+    .technology ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .technology li {
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    
+    .logo-section img {
+        max-width: 100px; 
+    }
+}
